@@ -14,7 +14,7 @@ client.on('message', message => {
   if (message.author.id !== "449009881341624321") return;
 
   
-  if (message.content.startsWith(prefix + 'setwatch')) {
+  if (message.content.startsWith(prefix + 'setw')) {
   client.user.setActivity(argresult, {type: 'WATCHING'})
      console.log('test' + argresult);
     message.channel.sendMessage(`Watch Now: **${argresult}`)
@@ -39,12 +39,12 @@ if (message.content.startsWith(prefix + 'setavatar')) {
    message.channel.sendMessage(`Avatar Changed Successfully To **${argresult}**`);
 }
 
-if (message.content.startsWith(prefix + 'setT')) {
+if (message.content.startsWith(prefix + 'sets')) {
   client.user.setGame(argresult, "https://www.twitch.tv/peery13");
      console.log('test' + argresult);
     message.channel.sendMessage(`Streaming: **${argresult}`)
 } 
-if (message.content.startsWith(prefix + 'setgame')) {
+if (message.content.startsWith(prefix + 'setg')) {
   client.user.setGame(argresult);
      console.log('test' + argresult);
     message.channel.sendMessage(`Playing: **${argresult}`)
